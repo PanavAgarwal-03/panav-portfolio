@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panav Agarwal | Portfolio</title>
+  <link rel="stylesheet" href="Styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="Script/script.js"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <header>
+    <nav class="fixed top-0 w-full bg-[#1a1a1a] text-gray-300 flex justify-between items-center h-16 z-50 px-6">
+      <div class="left text-xl font-semibold">Panav Agarwal</div>
+      <div class="right flex items-center">
+        <button id="menu-toggle" class="md:hidden text-[#f0f0f0] text-2xl focus:outline-none">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul id="nav-links" class="hidden md:flex md:space-x-6 flex-col md:flex-row absolute md:static top-16 left-0 w-full md:w-auto bg-[#1a1a1a] md:bg-transparent p-4 md:p-0">
+          <li><a href="#home" class="text-[#f0f0f0] hover:text-[#4f46e5] transition duration-300 block py-2 md:py-0">Home</a></li>
+          <li><a href="#about" class="text-[#f0f0f0] hover:text-[#4f46e5] transition duration-300 block py-2 md:py-0">About</a></li>
+          <li><a href="#projects" class="text-[#f0f0f0] hover:text-[#4f46e5] transition duration-300 block py-2 md:py-0">Projects</a></li>
+          <li><a href="https://panavresume.online/" target="_blank" class="text-[#f0f0f0] hover:text-[#4f46e5] transition duration-300 block py-2 md:py-0">Resume</a></li>
+          <li><a href="#contact" class="text-[#f0f0f0] hover:text-[#4f46e5] transition duration-300 block py-2 md:py-0">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="scroll-container">
+    <main>
+      <section id="home" class="section bg-[#121212] text-[#f0f0f0] flex flex-col items-center justify-center min-h-screen p-6">
+        <div class="text-5xl md:text-6xl font-bold">Hi! I am <span class="text-[#4f46e5]">Panav Agarwal</span></div>
+        <div class="text-3xl md:text-4xl mt-4">I am a <span id="roles" class="text-[#4f46e5]"></span></div>
+        <div class="social-icons mt-8 flex space-x-4">
+          <a href="https://www.linkedin.com/in/panav-agarwal-8b07ab249/" target="_blank" class="w-12 h-12 bg-[#1a1a1a] rounded-full flex items-center justify-center text-2xl text-[#f0f0f0] hover:bg-[#4f46e5] hover:scale-110 transition duration-300">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/PanavAgarwal-03" target="_blank" class="w-12 h-12 bg-[#1a1a1a] rounded-full flex items-center justify-center text-2xl text-[#f0f0f0] hover:bg-[#4f46e5] hover:scale-110 transition duration-300">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://leetcode.com/u/panavagarwal1/" target="_blank" class="w-12 h-12 bg-[#1a1a1a] rounded-full flex items-center justify-center text-2xl text-[#f0f0f0] hover:bg-[#4f46e5] hover:scale-110 transition duration-300">
+            <i class="fa-solid fa-code"></i>
+          </a>
+        </div>
+      </section>
+
+      <section id="about" class="section bg-[#121212] text-[#f0f0f0] flex flex-col items-center justify-center min-h-screen p-6">
+        <h1 class="section-heading text-4xl md:text-5xl text-[#4f46e5] mb-6">About Me</h1>
+        <p class="about-text max-w-3xl text-lg md:text-xl text-[#f0f0f0] mb-4 text-center">
+          Hello there! I'm Panav Agarwal, an aspiring engineer and B.Tech Computer Science student at VIT-AP. I’m passionate about exploring the ever-evolving world of technology and love solving problems through logical thinking and creativity. My journey in tech has been driven by curiosity, continuous learning, and a desire to build meaningful, real-world solutions.
+        </p>
+        <p class="about-text max-w-3xl text-lg md:text-xl text-[#f0f0f0] mb-4 text-center">
+          Currently, I’m diving deeper into software development and front-end design, finding joy in turning ideas into functional and visually appealing experiences. I believe in the power of tech to make a difference and am always eager to learn, collaborate, and contribute to innovative projects.
+        </p>
+        <p class="about-text max-w-3xl text-lg md:text-xl text-[#f0f0f0] mb-4 text-center">
+          If you're someone who loves tech too — let’s connect and build something impactful together!
+        </p>
+        <h1 class="text-3xl md:text-4xl text-[#4f46e5] mt-8 mb-6">Tech Stack</h1>
+        <div class="tech-stack relative w-full max-w-4xl overflow-hidden">
+          <div class="stack flex gap-4 animate-loop">
+            <div class="tech flex items-center gap-2 text-sm bg-[#22262c] text-[#e2e8f0] px-4 py-2 rounded-lg shadow-lg hover:bg-[#4f46e5] transition duration-300 whitespace-nowrap">
+              <img class="icons-techstack w-6" src="icons/java-icon.svg" alt="">Java
+            </div>
+            <div class="tech flex items-center gap-2 text-sm bg-[#22262c] text-[#e2e8f0] px-4 py-2 rounded-lg shadow-lg hover:bg-[#4f46e5] transition duration-300 whitespace-nowrap">
+              <img class="icons-techstack w-6" src="icons/python-icon.svg" alt="">Python
+            </div>
+            <div class="tech flex items-center gap-2 text-sm bg-[#22262c] text-[#e2e8f0] px-4 py-2 rounded-lg shadow-lg hover:bg-[#4f46e5] transition duration-300 whitespace-nowrap">
+              <img class="icons-techstack w-6" src="icons/spring-boot-icon.svg" alt="">SpringBoot
+            </div>
+            <div class="tech flex items-center gap-2 text-sm bg-[#22262c] text-[#e2e8f0] px-4 py-2 rounded-lg shadow-lg hover:bg-[#4f46e5] transition duration-300 whitespace-nowrap">
+              <img class="icons-techstack w-6" src="icons/numpy-icon.svg" alt="">Numpy
+            </div>
+            <div class="tech flex items-center gap-2 text-sm bg-[#22262c] text-[#e2e8f0] px-4 py-2 rounded-lg shadow-lg hover:bg-[#4f46e5] transition duration-300 whitespace-nowrap">
+              <img class="icons-techstack w-6" src="icons/html-icon.svg" alt="">HTML
+            </div>
+            <div class="tech flex items-center gap-2 text-sm bg-[#22262c] text-[#e2e8f0] px-4 py-2 rounded-lg shadow-lg hover:bg-[#4f46e5] transition duration-300 whitespace-nowrap">
+              <img class="icons-techstack w-6" src="icons/css-icon.svg" alt="">CSS
+            </div>
+            <div class="tech flex items-center gap-2 text-sm bg-[#22262c] text-[#e2e8f0] px-4 py-2 rounded-lg shadow-lg hover:bg-[#4f46e5] transition duration-300 whitespace-nowrap">
+              <img class="icons-techstack w-6" src="icons/javascript-icon.svg" alt="">JavaScript
+            </div>
+            <div class="tech flex items-center gap-2 text-sm bg-[#22262c] text-[#e2e8f0] px-4 py-2 rounded-lg shadow-lg hover:bg-[#4f46e5] transition duration-300 whitespace-nowrap">
+              <img class="icons-techstack w-6" src="icons/Pandas-icon.svg" alt="">Pandas
+            </div>
+            <div class="tech flex items-center gap-2 text-sm bg-[#22262c] text-[#e2e8f0] px-4 py-2 rounded-lg shadow-lg hover:bg-[#4f46e5] transition duration-300 whitespace-nowrap">
+              <img class="icons-techstack w-6" src="icons/pytorch-icon.svg" alt="">Pytorch
+            </div>
+            <div class="tech flex items-center gap-2 text-sm bg-[#22262c] text-[#e2e8f0] px-4 py-2 rounded-lg shadow-lg hover:bg-[#4f46e5] transition duration-300 whitespace-nowrap">
+              <img class="icons-techstack w-6" src="icons/scikit-learn-icon.svg" alt="">SciKit
+            </div>
+            <div class="tech flex items-center gap-2 text-sm bg-[#22262c] text-[#e2e8f0] px-4 py-2 rounded-lg shadow-lg hover:bg-[#4f46e5] transition duration-300 whitespace-nowrap">
+              <img class="icons-techstack w-6" src="icons/java-icon.svg" alt="">Java
+            </div>
+            <div class="tech flex items-center gap-2 text-sm bg-[#22262c] text-[#e2e8f0] px-4 py-2 rounded-lg shadow-lg hover:bg-[#4f46e5] transition duration-300 whitespace-nowrap">
+              <img class="icons-techstack w-6" src="icons/python-icon.svg" alt="">Python
+            </div>
+            <div class="tech flex items-center gap-2 text-sm bg-[#22262c] text-[#e2e8f0] px-4 py-2 rounded-lg shadow-lg hover:bg-[#4f46e5] transition duration-300 whitespace-nowrap">
+              <img class="icons-techstack w-6" src="icons/spring-boot-icon.svg" alt="">SpringBoot
+            </div>
+            <div class="tech flex items-center gap-2 text-sm bg-[#22262c] text-[#e2e8f0] px-4 py-2 rounded-lg shadow-lg hover:bg-[#4f46e5] transition duration-300 whitespace-nowrap">
+              <img class="icons-techstack w-6" src="icons/numpy-icon.svg" alt="">Numpy
+            </div>
+            <div class="tech flex items-center gap-2 text-sm bg-[#22262c] text-[#e2e8f0] px-4 py-2 rounded-lg shadow-lg hover:bg-[#4f46e5] transition duration-300 whitespace-nowrap">
+              <img class="icons-techstack w-6" src="icons/html-icon.svg" alt="">HTML
+            </div>
+            <div class="tech flex items-center gap-2 text-sm bg-[#22262c] text-[#e2e8f0] px-4 py-2 rounded-lg shadow-lg hover:bg-[#4f46e5] transition duration-300 whitespace-nowrap">
+              <img class="icons-techstack w-6" src="icons/css-icon.svg" alt="">CSS
+            </div>
+            <div class="tech flex items-center gap-2 text-sm bg-[#22262c] text-[#e2e8f0] px-4 py-2 rounded-lg shadow-lg hover:bg-[#4f46e5] transition duration-300 whitespace-nowrap">
+              <img class="icons-techstack w-6" src="icons/javascript-icon.svg" alt="">JavaScript
+            </div>
+            <div class="tech flex items-center gap-2 text-sm bg-[#22262c] text-[#e2e8f0] px-4 py-2 rounded-lg shadow-lg hover:bg-[#4f46e5] transition duration-300 whitespace-nowrap">
+              <img class="icons-techstack w-6" src="icons/Pandas-icon.svg" alt="">Pandas
+            </div>
+            <div class="tech flex items-center gap-2 text-sm bg-[#22262c] text-[#e2e8f0] px-4 py-2 rounded-lg shadow-lg hover:bg-[#4f46e5] transition duration-300 whitespace-nowrap">
+              <img class="icons-techstack w-6" src="icons/pytorch-icon.svg" alt="">Pytorch
+            </div>
+            <div class="tech flex items-center gap-2 text-sm bg-[#22262c] text-[#e2e8f0] px-4 py-2 rounded-lg shadow-lg hover:bg-[#4f46e5] transition duration-300 whitespace-nowrap">
+              <img class="icons-techstack w-6" src="icons/scikit-learn-icon.svg" alt="">SciKit
+            </div>
+          </div>
+          <div class="fade absolute inset-0 bg-gradient-to-r from-[#121212] via-transparent to-[#121212] pointer-events-none"></div>
+        </div>
+      </section>
+
+      <section id="projects" class="section bg-[#121212] text-[#f0f0f0] flex flex-col items-center justify-center min-h-screen p-6">
+        <h1 class="section-heading text-4xl md:text-5xl text-[#4f46e5] mb-12">Projects</h1>
+        <div class="project-section grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          
+          <div class="project-card relative bg-[#1a1a1a] rounded-2xl overflow-hidden shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+            <img src="banner/cab-sentiment.png" alt="Project Banner" class="project-banner w-full h-48 object-cover"/>
+            <div class="p-6">
+              <h3 class="project-heading text-xl font-semibold text-[#f0f0f0] mb-2">Intelligent Cab Review Classifier</h3>
+              <p class="project-description text-[#f0f0f0] text-sm">
+                Automated Classification of Cab Booking Reviews Using BERT <br>
+
+Developed a BERT-based NLP model to classify customer reviews into predefined topics (e.g., Driver Behavior, Pricing) and sentiments (Positive, Neutral, Negative), enhancing the analysis of user feedback for improved service strategies.
+              </p>
+              <div class="project-links flex justify-between items-center mt-4">
+                <a ></a>
+                <a href="https://github.com/PanavAgarwal-03/CabSense-Intelligent-Cab-Review-Classifier" target="_blank" class="github-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="w-10 h-10 rounded-full bg-[#f0f0f0] p-1 hover:bg-[#4f46e5] transition duration-300"/>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card relative bg-[#1a1a1a] rounded-2xl overflow-hidden shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+            <img src="banner/To-do-list.png" alt="Project Banner" class="project-banner w-full h-48 object-cover"/>
+            <div class="p-6">
+              <h3 class="project-heading text-xl font-semibold text-[#f0f0f0] mb-2">Dynamic To Do List</h3>
+              <p class="project-description text-[#f0f0f0] text-sm">
+                A to-do list application with features like drag-and-drop reordering, and visual progress tracking. <br> A dynamic and interactive to-do list built with JavaScript, HTML, and CSS. It allows users to add, edit, delete, drag-and-drop tasks. Color-coding and progress bars help users stay organized and track task effectively.
+              </p>
+              <div class="project-links flex justify-between items-center mt-4">
+                <a href="https://interactive-todo-list-app.netlify.app/" target="_blank" class="demo-button bg-[#4f46e5] text-[#f0f0f0] px-4 py-2 rounded-lg hover:bg-[#3730a3] transition duration-300">View Demo</a>
+                <a href="https://github.com/PanavAgarwal-03/Interactive-To-Do-List-with-Drag-Drop-Progress-Bar" target="_blank" class="github-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="w- syncing... 10 h-10 rounded-full bg-[#f0f0f0] p-1 hover:bg-[#4f46e5] transition duration-300"/>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card relative bg-[#1a1a1a] rounded-2xl overflow-hidden shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl">
+            <img src="banner/drowsiness-detection.png" alt="Project Banner" class="project-banner w-full h-48 object-cover"/>
+            <div class="p-6">
+              <h3 class="project-heading text-xl font-semibold text-[#f0f0f0] mb-2">Drowsiness Detection System</h3>
+              <p class="project-description text-[#f0f0f0] text-sm">
+                A real-time safety system that detects driver drowsiness using landmarks and eye monitoring. <br>A Python-based drowsiness detection application built with OpenCV. It tracks eye movement and calculates the Eye Aspect Ratio to detect signs of drowsiness. If detected, the system triggers an alarm and visual alert to prevent accidents, making driving safer and more alert.
+              </p>
+              <div class="project-links flex justify-between items-center mt-4">
+                <a></a>
+                <a href="https://github.com/PanavAgarwal-03/Drowsiness-detection-using-openCV" target="_blank" class="github-icon">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="w-10 h-10 rounded-full bg-[#f0f0f0] p-1 hover:bg-[#4f46e5] transition duration-300"/>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section bg-[#121212] text-[#f0f0f0] flex flex-col items-center justify-center min-h-screen p-6">
+        <h1 class="section-heading text-4xl md:text-5xl text-[#4f46e5] mb-12">Contact Me</h1>
+        <form id="contact-form" class="contact-form w-full max-w-lg flex flex-col gap-4">
+          <input type="text" name="name" placeholder="Your Name" required class="p-4 bg-[#1a1a1a] border border-[#4f46e5] rounded-lg text-[#f0f0f0] text-lg focus:outline-none focus:ring-2 focus:ring-[#4f46e5]"/>
+          <input type="email" name="email" placeholder="Your Email" required class="p-4 bg-[#1a1a1a] border border-[#4f46e5] rounded-lg text-[#f0f0f0] text-lg focus:outline-none focus:ring-2 focus:ring-[#4f46e5]"/>
+          <textarea name="message" rows="6" placeholder="Your Message" required class="p-4 bg-[#1a1a1a] border border-[#4f46e5] rounded-lg text-[#f0f0f0] text-lg resize-none focus:outline-none focus:ring-2 focus:ring-[#4f46e5]"></textarea>
+          <button type="submit" class="p-4 bg-[#4f46e5] text-[#f0f0f0] rounded-lg text-lg font-semibold hover:bg-[#3730a3] transition duration-300">Send Message</button>
+        </form>
+        <p id="form-status" class="mt-4 text-lg"></p>
+
+        <div class="fixed-footer fixed bottom-0 left-0 w-full bg-[#1a1a1a] text-[#f0f0f0] p-6 flex justify-between items-center border-t border-[#333] z-50 opacity-0 pointer-events-none transition-opacity duration-300">
+          <div class="footer-left">
+            <a href="docs/Panav Resume.pdf" download class="resume-button bg-[#4f46e5] text-[#f0f0f0] px-6 py-3 rounded-lg hover:bg-[#3730a3] transition duration-300">Download Resume</a>
+          </div>
+          <div class="footer-right flex space-x-6">
+            <a href="https://github.com/PanavAgarwal-03" target="_blank" class="text-2xl text-[#f0f0f0] hover:text-[#4f46e5] transition duration-300"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/panav-agarwal-8b07ab249/" target="_blank" class="text-2xl text-[#f0f0f0] hover:text-[#4f46e5] transition duration-300"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://leetcode.com/u/panavagarwal1/" target="_blank" class="text-2xl text-[#f0f0f0] hover:text-[#4f46e5] transition duration-300"><i class="fa-solid fa-code"></i></a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
