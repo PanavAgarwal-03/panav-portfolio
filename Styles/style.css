@@ -44,7 +44,7 @@ html {
   width: fit-content;
   display: flex;
   gap: 1rem;
-  animation: loop 30s linear infinite;
+  animation: loop 40s linear infinite;
 }
 
 .tech {
